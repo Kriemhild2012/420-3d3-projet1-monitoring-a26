@@ -116,6 +116,7 @@ class App:
         if self.log_active:
             with open("monitoring.log", 'a') as f:
                 f.write(ligne)
+                print(f"Écriture dans le fichier log: {ligne.strip()}")
 
         self.fenetre.after(2000, self.rafraichir)
 
