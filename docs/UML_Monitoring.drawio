@@ -44,13 +44,13 @@
             <mxRectangle height="40" width="100" x="180" y="44" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kyKjQyTkyXcJHcm4_SUN-30" parent="kyKjQyTkyXcJHcm4_SUN-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&amp;nbsp;- _cpu" vertex="1">
+        <mxCell id="kyKjQyTkyXcJHcm4_SUN-30" parent="kyKjQyTkyXcJHcm4_SUN-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&amp;nbsp;- __cpu : float" vertex="1">
           <mxGeometry height="26" width="160" y="22" as="geometry" />
         </mxCell>
-        <mxCell id="kyKjQyTkyXcJHcm4_SUN-35" parent="kyKjQyTkyXcJHcm4_SUN-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _ram" vertex="1">
+        <mxCell id="kyKjQyTkyXcJHcm4_SUN-35" parent="kyKjQyTkyXcJHcm4_SUN-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- __ram : float" vertex="1">
           <mxGeometry height="26" width="160" y="48" as="geometry" />
         </mxCell>
-        <mxCell id="kyKjQyTkyXcJHcm4_SUN-36" parent="kyKjQyTkyXcJHcm4_SUN-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- _stockage" vertex="1">
+        <mxCell id="kyKjQyTkyXcJHcm4_SUN-36" parent="kyKjQyTkyXcJHcm4_SUN-29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- __stockage : float" vertex="1">
           <mxGeometry height="26" width="160" y="74" as="geometry" />
         </mxCell>
         <mxCell id="kyKjQyTkyXcJHcm4_SUN-31" parent="kyKjQyTkyXcJHcm4_SUN-29" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
