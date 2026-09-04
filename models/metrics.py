@@ -19,5 +19,5 @@ class MetriquesSysteme(Sujet):
         return {
             "cpu": self._cpu,
             "ram": self._ram,
-            "disque": self._disque
+            "disk": self._disque
         }

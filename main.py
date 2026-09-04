@@ -1,3 +1,4 @@
+'''
 import tkinter as tk
 from datetime import datetime
 import psutil
@@ -123,3 +124,20 @@ class App:
 
 if __name__ == "__main__":
     app = App()
+'''
+
+from models.metrics import MetriquesSysteme
+from observers.cpu_display import AffichageCPU
+import tkinter as tk
+
+metriques = MetriquesSysteme()
+root = tk.Tk()
+cpu = AffichageCPU(root)
+metriques.abonner(cpu)
+
+def rafraichir():
+    metriques.actualiser_metriques()
+    root.after(2000, rafraichir)
+
+rafraichir()
+root.mainloop()
