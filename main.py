@@ -1,3 +1,4 @@
+'''
 import tkinter as tk
 from datetime import datetime
 import psutil
@@ -123,3 +124,11 @@ class App:
 
 if __name__ == "__main__":
     app = App()
+'''
+
+from models.metrics import MetriquesSysteme
+from views.dashboard import Dashboard
+ 
+metriques = MetriquesSysteme()
+app = Dashboard(metriques)
+app.mainloop()
