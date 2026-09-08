@@ -1,10 +1,9 @@
-import tkinter as tk
 from datetime import datetime
 from observers.observer import Observateur
 
 class LoggerFichier(Observateur):
-    def __init__(self,main_window: tk.Frame):
-        pass
+    def __init__(self,nom_fichier: str = "monitoring.log"):
+        self._nom_fichier = nom_fichier
     
     def actualiser(self, sujet) -> None:
         # À compléter: Récupérez la valeur CPU depuis sujet.get_donnees()
@@ -23,6 +22,6 @@ class LoggerFichier(Observateur):
             f"RAM: {self._ram:.1f}% | "
             f"Disque: {self._disque:.1f}%\n"
         )
-        with open("monitoring.log", 'a') as f:
+        with open(self._nom_fichier, 'a') as f:
             f.write(ligne)
             print(f"Écriture dans le fichier log: {ligne.strip()}")
