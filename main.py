@@ -127,29 +127,8 @@ if __name__ == "__main__":
 '''
 
 from models.metrics import MetriquesSysteme
-from observers.cpu_display import AffichageCPU
-from observers.disk_display import AffichageDISK
-from observers.ram_display import AffichageRAM
-from observers.logger import LoggerFichier
-import tkinter as tk
-
-#Initialisation du sujet et des observateurs
+from views.dashboard import Dashboard
+ 
 metriques = MetriquesSysteme()
-root = tk.Tk()
-cpu = AffichageCPU(root)
-ram = AffichageRAM(root)
-disk = AffichageDISK(root)
-logger = LoggerFichier(root)
-
-#Abonnement des observateurs au sujet
-metriques.abonner(cpu)
-metriques.abonner(ram)
-metriques.abonner(disk)
-metriques.abonner(logger)
-
-def rafraichir():
-    metriques.actualiser_metriques()
-    root.after(2000, rafraichir)
-
-rafraichir()
-root.mainloop()
+app = Dashboard(metriques)
+app.mainloop()
